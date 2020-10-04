@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "737438561994",
+    "firebase_url": "https://fluttermsgapp.firebaseio.com",
+    "project_id": "fluttermsgapp",
+    "storage_bucket": "fluttermsgapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737438561994:android:ace78f1d8b356c51d6a633",
+        "android_client_info": {
+          "package_name": "com.example.flutter_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "737438561994-njve008flbcng0n2io9ta0iotrorarf5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutter_app",
+            "certificate_hash": "65257937a87b54a0711c4f2b456a8fbe2f1a4bd8"
+          }
+        },
+        {
+          "client_id": "737438561994-p21bdk4lqd5tqu8jqrinomtu8hpb8dqk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfiXlCKfGpcOOl3z4kYy9V6kg2qi9MKTI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "737438561994-p21bdk4lqd5tqu8jqrinomtu8hpb8dqk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
