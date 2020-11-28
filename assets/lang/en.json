@@ -1,0 +1,16 @@
+{
+  "home_page": "Home Page",
+  "login_page": "Login Page",
+  "accounting_page": "Accounting Page",
+  "inventory_page": "Inventory Page",
+  "calendar": "Calendar",
+  "accounting": "Accounting",
+  "settings": "Settings",
+  "logout": "Logout",
+  "event": "Event",
+  "change_language": "中文",
+  "change_lang": "zh",
+  "language": "en_US",
+  "user": "User",
+  "teach_material": "Teaching Material"
+}

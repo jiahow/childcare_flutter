@@ -1,14 +1,16 @@
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter_app/UI/CustomAppBar.dart';
 import 'package:loading_overlay/loading_overlay.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/InventoryList.dart';
-import 'post.dart';
+import 'package:flutter_app/post.dart';
 import 'API/Inventory.dart';
+import 'API/User.dart';
+import 'package:flutter_app/PushNotification.dart';
 
 class InventoryPage extends StatefulWidget {
-  InventoryPage({Key key, this.title, this.loginuser}) : super(key: key);
+  InventoryPage({Key key, this.title}) : super(key: key);
   final String title;
-  final FirebaseUser loginuser;
   @override
   _InventoryPageState createState() => _InventoryPageState();
 }
@@ -18,6 +20,7 @@ class _InventoryPageState extends State<InventoryPage> {
   bool _isLoading = true;
 
   _InventoryPageState(){
+    GetUser();
     GetInventory().then((InvList) => {
         setState(() {
           _isLoading = false;
@@ -30,36 +33,11 @@ class _InventoryPageState extends State<InventoryPage> {
     });
   }
 
-  void handleClick(String value) {
-    switch (value) {
-      case 'Logout':
-        break;
-      case 'Settings':
-        break;
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text(widget.title),
-          actions: <Widget>[
-            PopupMenuButton<String>(
-              onSelected: handleClick,
-              itemBuilder: (BuildContext context) {
-                return {'Logout', 'Settings'}.map((String choice) {
-                  return PopupMenuItem<String>(
-                    value: choice,
-                    child: Text(choice),
-                  );
-                }).toList();
-              },
-            ),
-          ],
-        ),
-        body:
-        LoadingOverlay(
+        appBar: CustomAppBar(title: widget.title),
+        body: PushNotification(LoadingOverlay(
             child: Container(
                 child: Padding(
                   padding: EdgeInsets.all(15),
@@ -74,7 +52,8 @@ class _InventoryPageState extends State<InventoryPage> {
                             onPressed: () => {}
                         ),
                       ),
-                      Expanded(child: InventoryList(posts, widget.loginuser)),
+                      Expanded( child: InventoryList(posts),
+                      ),
                     ],
                   ),
                 )
@@ -82,8 +61,7 @@ class _InventoryPageState extends State<InventoryPage> {
           isLoading: _isLoading,
           opacity: 0.5,
           progressIndicator: CircularProgressIndicator(),
-        )
-
+        ))
     );
   }
 }

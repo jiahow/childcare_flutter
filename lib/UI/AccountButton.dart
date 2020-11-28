@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'InventoryPage.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+import '../InventoryPage.dart';
 
 class AccountButton extends StatefulWidget {
   final String Title;
-  final FirebaseUser loginuser;
-  AccountButton(this.Title, this.loginuser);
+  AccountButton(this.Title);
 
   @override
   _AccountButtonState createState() => _AccountButtonState();
@@ -16,7 +14,7 @@ class _AccountButtonState extends State<AccountButton> {
     switch (value) {
       case 'Inventory':
         Navigator.push(context,
-            MaterialPageRoute(builder: (context) => InventoryPage(title: value, loginuser: widget.loginuser)));
+            MaterialPageRoute(builder: (context) => InventoryPage(title: value)));
         break;
       case 'Debit':
         break;
