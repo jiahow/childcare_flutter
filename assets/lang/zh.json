@@ -7,10 +7,12 @@
   "accounting": "账目",
   "settings": "设置",
   "logout": "登出",
+  "login": "登入",
   "event": "事件",
   "change_language": "English",
   "change_lang": "en",
   "language": "zh_CN",
   "user": "用户",
-  "teach_material": "教材"
+  "teach_material": "教材",
+  "facebook_post": "脸书动态"
 }

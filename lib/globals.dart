@@ -8,12 +8,14 @@ String token = "";
 User user;
 
 //API
-const String LoginURL = "https://innosyssolution.com/api/login";
-const String RegisterURL = "https://innosyssolution.com/api/register";
-const String FilterUserURL = "https://innosyssolution.com/api/filteruser";
-const String GetEventURL = "https://innosyssolution.com/api/getevent";
-const String CreateEventURL = "https://innosyssolution.com/api/createevent";
-const String DeleteEventURL = "http://innosyssolution.com/api/deleteevent";
+const String BaseURL = "https://innosyssolution.com";
+const String LoginURL = BaseURL+"/api/login";
+const String RegisterURL = BaseURL+"/api/register";
+const String FilterUserURL = BaseURL+"/api/filteruser";
+const String GetEventURL = BaseURL+"/api/getevent";
+const String CreateEventURL = BaseURL+"/api/createevent";
+const String DeleteEventURL = BaseURL+"/api/deleteevent";
+const String GetFacebookPostURL = BaseURL+"/api/facebookpost";
 
 class Config {
   static final Map<String, String> langCode = const {
@@ -24,9 +26,9 @@ class Config {
     'User': 'user',
     'TeachMaterial': 'teach_material',
     'Accounting': 'accounting',
-    'ChangeLang': 'change_language',
     'Calendar': 'calendar',
     'Settings': 'settings',
+    'Post': 'facebook_post',
     'LogOut': 'logout'
   };
 }

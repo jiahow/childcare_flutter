@@ -7,10 +7,12 @@
   "accounting": "Accounting",
   "settings": "Settings",
   "logout": "Logout",
+  "login": "Login",
   "event": "Event",
   "change_language": "中文",
   "change_lang": "zh",
   "language": "en_US",
   "user": "User",
-  "teach_material": "Teaching Material"
+  "teach_material": "Teaching Material",
+  "facebook_post": "Facebook Post"
 }

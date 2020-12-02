@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/LoginPage.dart';
 import 'package:flutter_app/RegisterSuccessPage.dart';
 import 'MyHomePage.dart';
+import 'Portal.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 void main() => runApp(
@@ -26,9 +27,10 @@ class MyApp extends StatelessWidget {
       primarySwatch: Colors.blue,
       visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: LoginPage(),
+      home: Portal(title: tr("facebook_post")),//LoginPage(),
       routes: {
       // When navigating to the "/" route, build the FirstScreen widget.
+      '/portal': (context) => Portal(title: tr("facebook_post")),
       '/home': (context) => MyHomePage(title: tr("home_page")),
       '/login': (context) => LoginPage(),
       '/registerSuccess': (context) => RegisterSuccessPage(),
