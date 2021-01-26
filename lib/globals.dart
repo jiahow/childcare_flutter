@@ -8,7 +8,7 @@ String token = "";
 User user;
 
 //API
-const String BaseURL = "https://zionchildcare.online/";
+const String BaseURL = "https://www.zionchildcare.online";
 const String LoginURL = BaseURL+"/api/login";
 const String RegisterURL = BaseURL+"/api/register";
 const String FilterUserURL = BaseURL+"/api/filteruser";
