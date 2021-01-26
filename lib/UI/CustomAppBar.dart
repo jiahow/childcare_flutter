@@ -1,7 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app/API/FacebookPost.dart';
-import 'package:flutter_app/API/User.dart';
 import 'package:flutter_app/AccountPage.dart';
 import 'package:flutter_app/CalendarPage.dart';
 import 'package:easy_localization/easy_localization.dart';
