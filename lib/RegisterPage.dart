@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_app/API/User.dart';
 import 'package:flutter_app/globals.dart' as globals;
-import 'file:///D:/Project/childcare_flutter/lib/UI/RegisterTextField.dart';
+import 'package:flutter_app/UI/RegisterTextField.dart';
 import 'package:loading_overlay/loading_overlay.dart';
 import 'package:flutter_app/PushNotification.dart';
 
